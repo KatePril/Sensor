@@ -1,12 +1,6 @@
-package app;
+package app.indicators;
 
-public class Indicator {
-
-    public static String indicateColor(int temperature) {
-        if (temperature <= 0) return "white";
-        else return "black";
-    }
-
+public class WeightIndicator implements Indicator{
     public static String indicateWeight(int temperature) {
         if (temperature <= 0) {
             return "1";

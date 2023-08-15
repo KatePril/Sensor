@@ -1,6 +1,6 @@
 package app.sensors;
 
-import app.Indicator;
+import app.indicators.ColorIndicator;
 import app.Substance;
 
 public class ColorSensor extends Sensor {
@@ -16,6 +16,6 @@ public class ColorSensor extends Sensor {
     @Override
     public void update() {
         System.out.println("Color: "
-                + Indicator.indicateColor(substance.getState()));
+                + ColorIndicator.indicateColor(substance.getState()));
     }
 }

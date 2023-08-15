@@ -1,6 +1,5 @@
 package app.sensors;
 
-import app.Indicator;
 import app.Substance;
 
 public abstract class Sensor {

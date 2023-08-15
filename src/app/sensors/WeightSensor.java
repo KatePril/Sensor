@@ -1,7 +1,6 @@
 package app.sensors;
-
-import app.Indicator;
 import app.Substance;
+import app.indicators.WeightIndicator;
 
 public class WeightSensor extends Sensor {
 
@@ -16,6 +15,6 @@ public class WeightSensor extends Sensor {
     @Override
     public void update() {
         System.out.println("Weight (g): "
-                + Indicator.indicateWeight(substance.getState()));
+                + WeightIndicator.indicateWeight(substance.getState()));
     }
 }
